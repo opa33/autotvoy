@@ -1,0 +1,221 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+	font-family: 'Jost', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.сontainer {
+	max-width: 1180px;
+	padding: 0 30px;
+	margin: 0 auto;
+}
+
+header {
+	background-color: #0B2447;
+	height: 37vh;
+}
+
+.header-nav {
+	padding-top: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	height: 55px;
+	width: auto;
+}
+
+.nav-list {
+	display: flex;
+	column-gap: 50px;
+	font-weight: 500;
+	font-size: 14px;
+}
+
+.nav-list img {
+	height: 35px;
+	width: auto;
+}
+
+svg {
+	width: 40px;
+	height: 40px;
+}
+
+.line {
+	fill: #fff;
+	border-radius: 10;
+	transition: transform 0.3s, opacity 0.3s;
+}
+
+.top {
+	transform-origin: 50% 10%;
+}
+
+.middle {
+	transition: opacity 0.3s;
+}
+
+.bottom {
+	transform-origin: 5% 60%;
+}
+
+.open .top {
+	transform: rotate(45deg) translate(5px, 5px);
+}
+
+.open .middle {
+	opacity: 0;
+}
+
+.open .bottom {
+	transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.header-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	column-gap: 30px;
+	height: 20vh;
+}
+
+header .title {
+	color: white;
+	font-weight: 700;
+	font-size: 87px;
+}
+
+.rect2 {
+	width: 100%;
+	background-color: white;
+	border: none;
+	border-radius: 60px;
+	margin-top: -9vh;
+	z-index: 1;
+	position: relative;
+	-webkit-box-shadow: 1px 6px 54px 32px rgba(54, 120, 171, 0.41);
+	-moz-box-shadow: 1px 6px 54px 32px rgba(54, 120, 171, 0.41);
+	box-shadow: 1px 6px 54px 32px rgba(54, 120, 171, 0.41);
+}
+
+.kabinet {
+    height: 70vh;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.kabinet-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.kabinet-block {
+    border: 2px solid #19376d;
+    border-radius: 10px;
+    padding: 20px;
+    width: 660px;
+}
+
+.kabinet-block h4 {
+    font-weight: 400;
+    font-size: 40px;
+    color: #000;
+}
+
+.kabinet-block p {
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: 0.05em;
+    color: #19376d;
+    display: flex;
+}
+
+.inf {
+    display: flex;
+}
+
+.inf p {
+    margin-right: 20px;
+}
+
+.btn {
+	display: flex;
+	width: 150px;
+	height: 60px;
+	color: #fff;
+	background-color: #19376D;
+	font-weight: 400;
+	font-size: 24px;
+	font-family: 'Jost', sans-serif;
+	letter-spacing: 0.05em;
+	text-align: center;
+	border-radius: 10px;
+	border: none;
+	outline: none;
+	margin-right: 10px;
+	cursor: pointer;
+	text-decoration: none;
+	align-items: center;
+	justify-content: center;
+	margin-top: 30px;
+}
+
+footer {
+	background-color: #0B2447;
+	height: 300px;
+	z-index: -1;
+	position: relative;
+	margin-top: -7vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	padding-top: 70px;
+}
+
+footer p {
+	color: white;
+	margin-top: 50px;
+}
+
+        /* Стили для выдвигающегося меню */
+        .menu {
+					display: none;
+					position: absolute;
+					top: 60px;
+					right: 15px;
+					background-color: white;
+					box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+					z-index: 3;
+					opacity: 0;
+					transition: opacity 0.5s ease, max-height 0.5s ease;
+					max-height: 0;
+					overflow: hidden;
+					width:270px;
+					border-radius: 10px;
+					height: 400px;
+			}
+
+			.menu a {
+					color: #19376D;
+					padding: 12px 16px;
+					text-decoration: none;
+					display: block;
+			}
+
+			.menu a:hover {
+					background-color: #ddd;
+			}
+
+			.icon {
+					cursor: pointer;
+			}
